@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Array</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            The Big Array
+        </h1>
+    </header>
+    <section>
+        <div>
+            <p>Digite um número entre 1 e 100: <input type="number" name="txtnumber" id="txtnumber"> <input id="botoes"
+                    type="button" value="Adicionar" onclick="adicionarElemento()"></p>
+        </div>
+        <div id="parag">
+            <select name="tbselect" id="tbselect" size="10">
+
+            </select><br>
+            <input id="botoes" type="button" value="Finalizar" onclick="revisãoDeDados()"> <input id="botoes"
+                type="button" value="Limpar" onclick="limparTudo()">
+            <p id="total"></p>
+            <p id="maior"></p>
+            <p id="menor"></p>
+            <p id="soma"></p>
+            <p id="media"></p>
+        </div>
+    </section>
+    <p></p>
+    <section id="enunciado">
+        <div>
+            <h5>
+                Neste desafio, o programa solicita números de 1 a 100 e adiciona a um array. Após adicionar os números
+                e clicar em (Finalizar) ele irá retornar um conjunto de informações sobre aquele array.
+            </h5>
+            <input id="botoes" type="button" value="Voltar" onclick="voltarPagina()">
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy;
+            hardown.dev.br
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

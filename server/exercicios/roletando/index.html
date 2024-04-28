@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Roulette
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            A Grande Roleta de Jogos!
+        </h1>
+    </header>
+    <section>
+        <div>
+            <p>Adicione um jogo desejado: <br>
+                <input type="text" id="txtjogo" onkeypress="handleKeyPress(event)">
+                <input id="botoes" type="button" value="Adicionar" onclick="adicionarJogo()">
+            </p>
+        </div>
+        <div id="parag">
+            <select name="tbselect" id="tbselect" size="10">
+
+            </select><br>
+            <input id="botoes" type="button" value="Finalizar" onclick="roletandoJogos()"> <input id="botoes"
+                type="button" value="Limpar" onclick="limparTudo()">
+            <p id="result"></p>
+        </div>
+    </section>
+    <p></p>
+    <section id="enunciado">
+        <div>
+            <h5>
+                [EM CONSTRUÇÃO] Programinha para selecionar jogos de forma aleatória. Este é um projeto pessoal
+                com intuito exclusivo de aprendizado.
+            </h5>
+            <input id="botoes" type="button" value="Voltar" onclick="voltarPagina()">
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy;
+            hardown.dev.br
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

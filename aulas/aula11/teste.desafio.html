@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Imigrantes</title>
+    <style>
+        body {
+            background: mediumseagreen;
+        }
+
+        h1#title {
+            font: italic bold 24pt Tahoma;
+        }
+
+        div#imigrante {
+            font: normal 16pt Calibri;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Sistema de Verificação de Imigrantes</h1>
+    Informe seu país: <input type="text" name="naturalidade" id="naturalidade">
+    <input type="button" value="Verificar" onclick="verificarNaturalidade()">
+    <div id="imigrante">
+        Descubra sua naturalidade:
+    </div>
+    <script>
+        function verificarNaturalidade() {
+            var natural = document.getElementById("naturalidade")
+            var imigrante = document.getElementById("imigrante")
+            var nat = natural.value
+            imigrante.innerHTML = `Seu país é: ${nat}!`
+            if (nat == "Brasil") {
+                imigrante.innerHTML += "<p>Você é <strong>NATURAL</strong> deste país!</p>"
+            } else {
+                imigrante.innerHTML += "<p>Você é <strong>Estrangeiro</strong></p>"
+            };
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+body {
+  background: rgb(255, 102, 0);
+  font: normal 18pt Calibri;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header {
+  color: white;
+  text-align: center;
+}
+section {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.35);
+}
+section#enunciado {
+  text-align: center;
+}
+div {
+  text-align: center;
+  padding: 8px;
+}
+footer {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+
+input {
+  width: 100px;
+  font: 16px Tahoma;
+  padding: 5px;
+  border: solid 2px black;
+  border-radius: 30px;
+  color: black;
+  background-color: white;
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+input:hover {
+  background-color: orange;
+  color: black;
+  transform: scale(1.2);
+}

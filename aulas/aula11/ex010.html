@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENTRAN</title>
+    <style>
+        div#informativo {
+            margin-top: 20px;
+            font: normal 15pt Calibri;
+            background: rgb(127, 184, 250);
+            width: 500px;
+            height: 250px;
+            text-align: center;
+        }
+
+        input#box {
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do veículo: <input id="box" type="number" name="txtvelocidade" id="txtvelocidade">Km/h
+    <input type="button" value="Verificar" onclick="verificarVelocidade()">
+    <div id="informativo">
+        Clique no botão para verificar se você foi multado.
+    </div>
+    <script>
+        function verificarVelocidade() {
+            var velocidade = document.getElementById("box")
+            var info = document.getElementById("informativo")
+            var convertvel = Number(velocidade.value)
+            info.innerHTML = `<p>Sua velocidade é de: <strong>${convertvel}</strong>Km/h</p>`
+            if (convertvel > 60) {
+                info.innerHTML += "<p>Você está <strong>MULTADO</strong> por excesso de velocidade!</p>"
+                info.innerHTML += "<p>Procure o Dentran da sua cidade para regularizar a multa."
+            }
+            info.innerHTML += "<p>Dirija sempre com o cinto de segurança!</p>"
+        }
+
+    </script>
+</body>
+
+</html>
