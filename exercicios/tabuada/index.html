@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="carregar()">
+    <header>
+        <h1>
+            Tabuada
+        </h1>
+    </header>
+    <section>
+        Número: <input type=" number" name="txttab" id="txttab" onkeypress="handleKeyPress(event)">
+        <input id="botoes" type="button" value="Gerar Tabuada" onclick="gerarTabuada()">
+        <input id="botoes" type="button" value="Limpar" onclick="limpar()">
+        </div>
+        <div id="result"> Resultado: <br>
+            <select name="tabuada" id="tabselect" size="10">
+            </select>
+        </div>
+        <p>
+
+        </p>
+    </section>
+    <p></p>
+    <section id="enunciado">
+        <div>
+            <h5>
+                Neste desafio, é solicitado que o programa
+                receba um número e gere a tabuada do valor em questão.
+            </h5>
+            <input id="botoes" type="button" value="Voltar" onclick="voltarPagina()">
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy;
+            hardown.dev.br
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

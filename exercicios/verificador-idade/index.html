@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="carregar()">
+    <header>
+        <h1>
+            Verificador de Idade </h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Ano de Nascimento: <input type="number" name="txtano" id="txtano" onkeypress="keypress(event)">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="male" checked>
+                <label for="male">Masculino</label>
+                <input type="radio" name="radsex" id="female">
+                <label for="female">Feminino</label>
+            </p>
+            <p>
+                <input id="botoes" type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="resultado">
+            Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+    <p></p>
+    <section id="enunciado">
+        <div>
+            <h5>
+                Neste desafio, o programa solicita um ano de nascimento e um gênero para retornar,
+                a idade e uma foto pré-definida que represente uma pessoa com determinada idade.
+            </h5>
+            <input id="botoes" type="button" value="Voltar" onclick="voltarPagina()">
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy;
+            hardown.dev.br
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

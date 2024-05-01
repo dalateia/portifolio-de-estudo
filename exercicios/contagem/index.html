@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="carregar()">
+    <header>
+        <h1>
+            Vamos Contar?
+        </h1>
+    </header>
+    <section>
+        <div id="form">
+            Início: <input type="text" name="txtinit" id="txtinit" onkeypress="handleKeyPress(event)"><br>
+            Fim: <input type="text" name="txtend" id="txtend" onkeypress="handleKeyPress(event)"><br>
+            Passo: <input type="text" name="txtcont" id="txtcont"><br>
+            <p>
+                <input id="botoes" type="button" value="Contar" onclick="contagem()">
+                <input id="botoes" type="button" value="Limpar" onclick="limpar()">
+            </p>
+        </div>
+        <div id="result">
+            Preparando contagem...
+        </div>
+    </section>
+    <p></p>
+    <section id="enunciado">
+        <div>
+            <h5>
+                O desafio apresenta o cenário onde recebe um número inicial (Início) e um número final (Fim).
+                Com estes dados ele irá contar do número inicial ao final.
+                O campo de contagem (Passo) indica quantos passos por vez o valor contará até chegar ao final.
+                É necessário ao menos um número inicial ou final. Caso o passo seja não seja informado ele assumirá 1.
+                <p>
+                    IMPORTANTE! Caso informe um número muito grande, seu navegador IRÁ travar.
+
+                </p>
+            </h5>
+            <input id="botoes" type="button" value="Voltar" onclick="voltarPagina()">
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy;
+            hardown.dev.br
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

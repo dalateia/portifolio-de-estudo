@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Vamos testar esta foto</h1>
+    </header>
+    <section>
+        <picture>
+            <source media="(min-width: 1050px)" srcset="images/pic-full-g.png" type="image/png">
+            <source media="(min-width: 550px)" srcset="images/pic-full-m.png" type="image/png">
+            <source media="(min-width: 300px)" srcset="images/pic-crop-p.png" type="image/png">
+            <img src="images/pic-full-p.png" alt="foto">
+        </picture>
+    </section>
+    <footer>
+        <p>&copy;
+            hardown.dev.br
+        </p>
+    </footer>
+</body>
+
+</html>
